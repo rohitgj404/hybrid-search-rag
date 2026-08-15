@@ -1,0 +1,6 @@
+# Core dependencies — the pipeline runs fully with just these.
+# Keyword search (BM25), hybrid fusion, reranking fallback, and generation
+# all work out of the box. Vector search uses TF-IDF embeddings unless
+# sentence-transformers is installed (see requirements-full.txt).
+numpy>=1.26
+requests>=2.31

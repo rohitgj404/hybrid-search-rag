@@ -1,0 +1,5 @@
+# Full install — adds real neural embeddings and cross-encoder reranking.
+# sentence-transformers pulls in torch (CPU build by default) and downloads
+# models from Hugging Face on first use.
+-r requirements.txt
+sentence-transformers>=3.0.0

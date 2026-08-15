@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "RAG: Ingest sample docs",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": ["ingest", "data/sample_docs"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "RAG: Search (no LLM)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": ["search", "how do I fix connection timeout errors"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "RAG: Query (answer with LLM)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": ["query", "how do I fix connection timeout errors"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
